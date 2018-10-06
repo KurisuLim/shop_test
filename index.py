@@ -14,9 +14,11 @@ input("\nPress the Enter Key to continue.")
 # Now lets display the length or number of items in the inventory
 print("\nShop Keeper: The number of  items that I sell is ", len(inventory), ".")
 
+input("\nPress the Enter Key to continue.")
+
 # Now let's pretend a player bought a potion
 item = str(input("\nHello, What Item do you want to buy? "))
-print("\nShop Keeper: Do you want to have buy a  ", item , "?")
+print("\nShop Keeper: Do you want to have buy a ", item , "?")
 if item.lower() in inventory:
 	print("The player just bought a ", item, ".")
 else:
@@ -46,5 +48,16 @@ begin = int(input("\nShop Keeper: Please enter a starting index from my inventor
 end = int(input("\nShop Keeper: Now please enter a end index from my inventory. "))
 print("\nShop Keeper: Inventory[", begin, ":", end,"] is ", end=" ")
 print(inventory[begin:end])
+
+input("\nPress the Enter Key to continue.")
+
+#Added a new item in the list
+playerTrash = ["goblin tooth", "toenail of ogre"]
+print("\nPlayer just sold his ", playerTrash, " to the Shop Keeper")
+inventory += playerTrash
+print("\nShop keeper: Now I have these items to sell: ")
+
+for items in inventory:
+	print(items)
 
 input("\nPress the Enter Key to continue.")
