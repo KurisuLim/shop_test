@@ -16,11 +16,11 @@ print("\nShop Keeper: The number of  items that I sell is ", len(inventory), "."
 
 # Now let's pretend a player bought a potion
 item = str(input("\nHello, What Item do you want to buy? "))
-print("\nShop Keeper: You want to have buy a  ", item , "?")
+print("\nShop Keeper: Do you want to have buy a  ", item , "?")
 if item.lower() in inventory:
 	print("The player just bought a ", item, ".")
 else:
-	print("Sorry, but we dont have the ", item,".")
+	print("Shop Keeper: Sorry, but we dont have the ", item,".")
 
 input("\nPress the Enter Key to continue.")
 
@@ -36,5 +36,15 @@ Indexs of the items:
 index = int(input("\nShop Keeper: Please enter an index of item you want to buy. "))
 print("The Index you choose is : ", index)
 print("And that is the the item : ", inventory[index])
+
+input("\nPress the Enter Key to continue.")
+
+
+# Now lets try doing some slicing
+
+begin = int(input("\nShop Keeper: Please enter a starting index from my inventory. "))
+end = int(input("\nShop Keeper: Now please enter a end index from my inventory. "))
+print("\nShop Keeper: Inventory[", begin, ":", end,"] is ", end=" ")
+print(inventory[begin:end])
 
 input("\nPress the Enter Key to continue.")
