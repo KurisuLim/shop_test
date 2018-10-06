@@ -51,11 +51,21 @@ print(inventory[begin:end])
 
 input("\nPress the Enter Key to continue.")
 
-#Added a new item in the list
+#Added a new item in the list by concat
 playerTrash = ["goblin tooth", "toenail of ogre"]
 print("\nPlayer just sold his ", playerTrash, " to the Shop Keeper")
 inventory += playerTrash
 print("\nShop keeper: Now I have these items to sell: ")
+
+for items in inventory:
+	print(items)
+
+input("\nPress the Enter Key to continue.")
+
+#Add a new list through index
+print("\nPlayer just traded his dagger for a healing potion.")
+inventory[0] = "dagger"
+print("\nShop keeper: Thank you for your trade. Here is now the items I sell:")
 
 for items in inventory:
 	print(items)
