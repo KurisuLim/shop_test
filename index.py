@@ -71,3 +71,43 @@ for items in inventory:
 	print(items)
 
 input("\nPress the Enter Key to continue.")
+
+# Adds new item through slice
+print("\nPlayer sold his excalibur sword for 1 gold.")
+inventory[2:3] = ["excalibur sword"]
+print("\nShop Keeper: Thank you for your patronage. But here is the list of items that I sell now:")
+
+for items in inventory:
+	print(items)
+
+input("\nPress the Enter Key to continue.")
+
+# Now lets try removing an items from the list
+print("\nThe player bought back his excalibur sword.")
+del inventory[2]
+print("\nShop Keeper: Thank you for buying back your sword for 100000000 gold. And here is the items that I have: ")
+
+for items in inventory:
+	print(items)
+
+input("\nPress the Enter Key to continue.")
+
+# Let's try removing an item through a slice
+print("\nAn unkown man just bought the dagger and mana potion from the Shop Keeper.")
+del inventory[:2]
+print("\nShop keeper: Wow! I almost have no more inventory! ")
+
+for items in inventory:
+	print(items)
+
+input("\nPress the Enter Key to continue.")
+
+# Now lets punish the shop keeper for being greedy by removing all his items and gold.
+print("\nA goblin with a torch comes into the shop and destorys everything.")
+print("\nNow the Shop keeper lost his gold and the items he owns:")
+
+for items in inventory:
+	del inventory[0:2]
+	print(items)
+
+input("\nPress the Enter Key to exit.")
